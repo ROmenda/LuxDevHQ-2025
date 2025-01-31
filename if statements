@@ -1,0 +1,10 @@
+grade = 'B'
+if grade == 'A':
+    print('The student scored A')
+elif grade == 'B':
+    print('The student scored B')
+elif grade == 'C':
+    print('The student scored C')
+else:
+    print("The student's grade is missing!")
+ 

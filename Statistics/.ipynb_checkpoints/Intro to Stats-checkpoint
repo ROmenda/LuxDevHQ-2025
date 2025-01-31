@@ -1,0 +1,30 @@
+#Mean
+my_scores = [54, 54, 54, 55, 56, 57, 57, 58, 58, 60, 60]
+no_of_students = len(my_scores) #no of students who sat the course
+total = sum(my_scores) #sum of scores
+
+Mean1 = (float(total)/float(no_of_students))
+print(Mean1)
+
+Mean2 = ((total)/(no_of_students))
+print(Mean2)
+
+#Median
+import statistics
+Form_Four_East_scores = [51, 70, 53, 69, 56, 59, 65, 60, 66, 61, 58]
+Median = statistics.median(Form_Four_East_scores)
+Mean = statistics.mean(Form_Four_East_scores)
+print(Median)
+print(Mean)
+
+
+#Absolute Deviation
+#Getting the absolute deviation using a for loop
+
+
+
+
+#Do we start with the smallest or largest value when writing reports?
+#Sorting
+y = sorted(Form_Four_East_scores)
+print(y)

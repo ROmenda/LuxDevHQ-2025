@@ -1,0 +1,6 @@
+description = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
+
+for x in description:
+  for y in fruits:
+    print(x, y)

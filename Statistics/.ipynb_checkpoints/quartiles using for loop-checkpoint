@@ -1,0 +1,34 @@
+def find_median(data):
+    data = sorted(data)
+    n = len(data)
+    middle = n // 2
+    if n % 2 == 0:
+        return (data[middle - 1] + data[middle]) / 2
+    else:
+        return data[middle]
+
+def find_quartiles(data):
+    data = sorted(data)
+    n = len(data)
+    
+    # Q2 (Median of the entire dataset)
+    Q2 = find_median(data)
+    
+    # Q1 (Median of the lower half of the data)
+    lower_half = data[:n // 2]
+    Q1 = find_median(lower_half)
+    
+    # Q3 (Median of the upper half of the data)
+    upper_half = data[(n + 1) // 2:]
+    Q3 = find_median(upper_half)
+    
+    return Q1, Q2, Q3
+
+# Example data
+data = [7, 15, 36, 39, 40, 41, 42, 43, 47, 50, 51, 52, 53, 54]
+
+Q1, Q2, Q3 = find_quartiles(data)
+
+print(f"Q1 (First Quartile): {Q1}")
+print(f"Q2 (Median): {Q2}")
+print(f"Q3 (Third Quartile): {Q3}")

@@ -1,0 +1,21 @@
+#printing a number so long as it is less than 10
+number = 0
+while number < 10:
+    #To use formatted string literals, begin a string with f or F before the opening quotation
+    #mark or triple quotation mark in a print() statement. Inside this string, you can write a
+    #Python expression between { } characters that can refer to variables or literal values.
+    print(f"The number is {number}")
+    number +=1
+
+
+#creating a login scenario with 3 attempts or safaguarding an account
+password = "luxdevhq"
+counter = 0
+
+while True:
+    User_input = input("Enter your password: ")
+    counter += 1
+    if User_input == password:
+        break
+    if User_input != password and counter > 2:
+        break

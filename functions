@@ -1,0 +1,17 @@
+#new_employees = ["Geoffrey", "Asenanth", "Randy"]
+
+#welcome_messages = []
+#for new_employee in new_employees:
+ #   welcome_messages.append("Hi + new_employee.title() + ",  )
+
+#welcome_messages
+
+
+
+#basic syntax of a function
+def name_of_function(): #signature
+    words = 'function body' #body
+    print(words)
+    #return(words)
+
+name_of_function()

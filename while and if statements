@@ -1,0 +1,12 @@
+#creating a login scenario with a maximum of 3 attempts
+password = "luxdevhq"
+counter = 0
+
+while True:
+    User_input = input("Enter your password: ")
+    counter += 1
+    if User_input == password:
+        #The break statement allows you to control the flow of a while loop and not end up with an infinite loop.
+        break
+    if User_input != password and counter > 2:
+        break

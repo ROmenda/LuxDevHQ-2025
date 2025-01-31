@@ -1,0 +1,7 @@
+for letter in 'Microsoft Corporation':
+    if letter == 'o' or letter == 'a':
+        #The continue statement is used to skip the current iteration of a loop and move to the next iteration
+        #used to bypass certain conditions without terminating the loop
+        continue
+    
+    print("Current letter:", letter)

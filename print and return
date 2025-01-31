@@ -1,0 +1,4 @@
+def add_function(a,b,c):
+    return (a+b+c)
+result = add_function(3,4,5)
+print(result)

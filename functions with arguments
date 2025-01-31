@@ -1,0 +1,28 @@
+#welcome message
+def student(name, year):
+    welcome_message = (f"Hello {name}. Welcome to Graduation {year}!")
+    print (welcome_message)
+
+student("Kasongo", "2025")
+
+
+def stude(name, age):
+
+  greet = 'Hello ' + name.upper() + '.' ' Welcome!!'
+  your_age = (age*3)
+  print(greet)
+  
+  print(your_age)
+
+stude('Jimwat', 18)
+
+my_list = (2,3,4,5,6,7,8,9)
+def even_greetings(list):
+    
+    for num in list:
+      if num % 2 == 0: #conditional statement
+         print('The number is an Even number')
+      else:
+         print('The number is an Odd number')
+
+even_greetings(my_list)
